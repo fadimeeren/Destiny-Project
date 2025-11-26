@@ -1,0 +1,91 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Css Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+/* Root */
+:root {
+  --green: #49fc05;
+  --white: #f5f5f5;
+  --gray: #cdcccc;
+  --black: #121212;
+}
+
+/* global Styles */
+
+body {
+  font-family: "inter", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+button {
+    padding:  7px 20px;
+    font-size: 16px;
+    cursor: var(--white);
+    transition: all 0.5s ease;
+    border-radius: 16px;
+}
+
+button:hover{
+transform: scale(0.9);
+box-shadow: 2px 2px 20px var(--gray);
+}
+
+a {
+  color: var(--white);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-size: 33px;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav a{
+    font-weight: 500;
+    padding: 5px;
+    transition: all 0.5s ease;
+}
+header nav a:hover {
+    color: var(--green);
+}
+
+header nav .special-link{
+    color: var(--green);
+}
+
+header #menu-btn {
+    padding: 10px;
+    display: flex;
+}
+
+header #menu-btn i {
+    font-size: 20px;
+}
+

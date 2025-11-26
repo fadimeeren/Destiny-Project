@@ -1,0 +1,23 @@
+@media(max-width:1000px) {
+    /* Hedaer */
+    header #menu-btn {
+        display: block !important;
+    }
+header nav {
+    display: none;
+}
+
+/* Nav elemanlarını js kısmından yönetebilmek için gerekli class */
+.open-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 75px;
+    right: 20px;
+    background-color: #323443;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+}
