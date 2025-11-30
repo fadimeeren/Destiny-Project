@@ -1,3 +1,14 @@
+@media (max-width: 1400px) {
+  .actions-section {
+    flex-direction: column;
+    gap: 100px !important;
+  }
+  .actions-section .info {
+    max-width: unset !important;
+    text-align: center;
+    padding: 10px;
+  }
+}
 @media (max-width: 1300px) {
   #services {
     flex-direction: column;
@@ -12,19 +23,25 @@
     text-align: center;
   }
 }
-
-
-@media(max-width:1000px) {
-    /* Hedaer */
-    header #menu-btn {
-        display: block !important;
-    }
-header nav {
-    display: none;
+@media (max-width: 1100px) {
+  .projects-section .project-cards .project-card {
+    flex-direction: column-reverse;
+  }
 }
+@media (max-width: 1000px) {
+  section {
+    padding: 15px;
+  }
+  /* Header */
+  header #menu-btn {
+    display: block !important;
+  }
+  header nav {
+    display: none;
+  }
 
-/* Nav elemanlarını js kısmından yönetebilmek için gerekli class */
-.open-nav {
+  /* Nav elemanlarını js kısmından yönetebilmek için gerekli class */
+  .open-nav {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -34,17 +51,51 @@ header nav {
     padding: 20px;
     border-radius: 20px;
     transition: all 0.5s ease;
-}
-/* Hero */
-#hero {
+  }
+
+  /* Hero */
+  #hero {
     justify-content: center;
-}
-#hero .hero-content {
+  }
+  #hero .hero-content {
     max-width: 400px;
-}
-#hero .hero-content .hero-button-wrapper {
+  }
+  #hero .hero-content .hero-button-wrapper {
     justify-content: center;
-}
+  }
+
+  /* Info Section */
+  #info-section .top-info {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 0;
+  }
+
+  /* * Count Section  */
+  .count-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .count-section :where(.count-section-left, .count-section-right) {
+    width: 100%;
+  }
+  .count-section .count-section-left .count-wrapper {
+    max-width: 600px !important;
+    min-width: 400px;
+    margin: auto;
+  }
+  .count-section .count-section-right img {
+    max-width: 500px !important;
+    width: 80%;
+  }
+
+  /* * Donate Section  */
+  .donations-section .donate-section-info {
+    width: 90% !important;
+  }
+  .donations-section .donate-cards {
+    width: 90% !important;
+  }
 }
 
 @media (max-width: 800px) {
@@ -64,5 +115,22 @@ header nav {
 
   .projects-section .project-cards .project-card .project-info h1 {
     font-size: 30px !important;
+  }
+}
+@media (max-width: 640px) {
+  footer .footer-links .footer-link form {
+    flex-direction: column;
+  }
+  footer .footer-links .footer-link form :where(input, button) {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #services .windows .window {
+    width: 400px;
+  }
+  #arge-section .arge-cards .arge-card video {
+    width: 100%;
   }
 }
