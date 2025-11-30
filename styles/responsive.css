@@ -1,3 +1,19 @@
+@media (max-width: 1300px) {
+  #services {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center !important;
+  }
+  #services .service-info {
+    max-width: unset;
+  }
+  .welcome-section .welcome-title {
+    padding: 20px !important;
+    text-align: center;
+  }
+}
+
+
 @media(max-width:1000px) {
     /* Hedaer */
     header #menu-btn {
@@ -19,6 +35,34 @@ header nav {
     border-radius: 20px;
     transition: all 0.5s ease;
 }
+/* Hero */
+#hero {
+    justify-content: center;
+}
+#hero .hero-content {
+    max-width: 400px;
+}
+#hero .hero-content .hero-button-wrapper {
+    justify-content: center;
+}
+}
 
+@media (max-width: 800px) {
+  #services .windows {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  #services .windows .window {
+    width: 600px;
+  }
+  .projects-section .project-cards .project-card .card-image {
+    width: 100%;
+  }
+  .projects-section .project-cards .project-card .card-image img {
+    width: 100%;
+  }
 
+  .projects-section .project-cards .project-card .project-info h1 {
+    font-size: 30px !important;
+  }
 }
