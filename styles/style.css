@@ -65,6 +65,7 @@ header nav {
   display: flex;
   align-items: center;
   gap: 20px;
+  transition: all 0.5s ease;
 }
 
 header nav a{
@@ -89,3 +90,9 @@ header #menu-btn i {
     font-size: 20px;
 }
 
+/* Hero */
+#hero {
+  background: url("../images/images/back.jpg") center/cover;
+  height: 50vh;
+  background-attachment: fixed;
+}

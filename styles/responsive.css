@@ -17,6 +17,7 @@ header nav {
     background-color: #323443;
     padding: 20px;
     border-radius: 20px;
+    transition: all 0.5s ease;
 }
 
 
